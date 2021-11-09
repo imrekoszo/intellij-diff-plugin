@@ -34,14 +34,16 @@ group = 'de.thomasrosenau'
 sourceCompatibility = 1.8
 
 // version of this plugin
-version = '2.1.7-SNAPSHOT'
+version = '2.1.7-imrekoszo-2021-3'
 
 // IDE version that will be used for compilation, unit tests, and for :runIde task
-intellij.version = '211.6693.111'
+intellij {
+    version '2021.1'
+}
 
 patchPluginXml {
     sinceBuild = '211'
-    untilBuild = '211.*'
+    untilBuild = '213.*'
 
     // language=HTML prefix=<body> suffix=</body>
     pluginDescription = '''
@@ -67,7 +69,7 @@ patchPluginXml {
     changeNotes = '''
         <h5>2.1.7</h5>
         <ul>
-          <li>Update compatibility for 2021.1 product line</li>
+          <li>Update compatibility for 2021.3 product line</li>
         </ul>
         <h5>2.1.6</h5>
         <ul>
